@@ -105,6 +105,10 @@ cd /opt/prometheus
 ```
 Prometheus UI: [http://localhost:9095](http://localhost:9095)
 
+run :  
+curl http://localhost:9095/api/v1/query?query=up
+
+
 ## 10️⃣ Install Grafana
 ```bash
 sudo dnf install grafana -y
