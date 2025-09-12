@@ -113,6 +113,11 @@ You should see the messages you typed in the producer.
 
 ---
 
+List all kafka brokers
+
+/opt/kafka/bin/kafka-metadata-quorum.sh --bootstrap-server localhost:9092 describe --status
+
+
 ## Step 7: Optional — Clean Shutdown
 
 ```bash
@@ -121,10 +126,11 @@ sudo pkill -f kafka.Kafka
 
 ---
 
-✅ This setup creates a single-node Kafka cluster in KRaft mode:
+ This setup creates a single-node Kafka cluster in KRaft mode:
 
 - No Zookeeper required
 - Fresh logs in `/tmp/kraft-logs`
 - Plaintext communication (no SSL/SASL)
 - Single-node cluster ready for testing or development
+
 
